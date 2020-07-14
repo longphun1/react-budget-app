@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render header correctly 1`] = `
+<header>
+  <h1>
+    Expensify
+  </h1>
+  <Link
+    to="/"
+  >
+    HOME
+  </Link>
+   |
+  <Link
+    to="/add"
+  >
+    CREATE
+  </Link>
+   |
+  <Link
+    to="help"
+  >
+    HELP
+  </Link>
+   |
+</header>
+`;
