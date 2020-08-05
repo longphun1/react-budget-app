@@ -6,7 +6,7 @@ exports[`should render header correctly 1`] = `
     Expensify
   </h1>
   <Link
-    to="/"
+    to="/dashboard"
   >
     HOME
   </Link>
@@ -15,12 +15,6 @@ exports[`should render header correctly 1`] = `
     to="/add"
   >
     CREATE
-  </Link>
-   |
-  <Link
-    to="help"
-  >
-    HELP
   </Link>
    |
   <button
