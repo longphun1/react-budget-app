@@ -1,13 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { startLogout } from '../actions/auth';
 
-const Header = () => (
+export const Header = ({ startLogout }) => (
     <header>
         <h1>Expensify</h1>
         <Link to="/">HOME</Link> | 
         <Link to="/add">CREATE</Link> |  
         <Link to="help">HELP</Link> | 
+        <button onClick={startLogout}>Logout</button>
     </header>
 );
 
-export default Header;
+const mapDispatchToProps = (dispatch) => ({
+    startLogout: () => dispatch(startLogout())
+});
+
+export default connect(undefined, mapDispatchToProps)(Header);
