@@ -3,16 +3,19 @@
 exports[`should render expenseform correctly 1`] = `
 <div>
   <form
+    className="form"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
+      className="text-input"
       onChange={[Function]}
       placeholder="Description"
       type="test"
       value=""
     />
     <input
+      className="text-input"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -95,13 +98,18 @@ exports[`should render expenseform correctly 1`] = `
       withPortal={false}
     />
     <textarea
+      className="textarea"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add expense
-    </button>
+    <div>
+      <button
+        className="button"
+      >
+        Add expense
+      </button>
+    </div>
   </form>
 </div>
 `;
@@ -109,16 +117,19 @@ exports[`should render expenseform correctly 1`] = `
 exports[`should render expenseform correctly with expense data 1`] = `
 <div>
   <form
+    className="form"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
+      className="text-input"
       onChange={[Function]}
       placeholder="Description"
       type="test"
       value="rent"
     />
     <input
+      className="text-input"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -201,13 +212,18 @@ exports[`should render expenseform correctly with expense data 1`] = `
       withPortal={false}
     />
     <textarea
+      className="textarea"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add expense
-    </button>
+    <div>
+      <button
+        className="button"
+      >
+        Add expense
+      </button>
+    </div>
   </form>
 </div>
 `;
